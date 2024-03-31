@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Balance from "./components/Balance";
+import Form from "./components/Form";
+import Layout from "./components/Layout";
+import Transactions from "./components/Transactions/Transactions";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export const App = () => {
   return (
-    <>
-      Lorem ipsum dolor sit amet.
-    </>
-  )
-}
+    <Layout>
+      <Balance />
+      <Form />
+      <Transactions />
+    </Layout>
+  );
+};
 
-export default App
+export default App;
